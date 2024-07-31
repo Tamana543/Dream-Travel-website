@@ -8,19 +8,31 @@
       content="The World Is Yours to Explore. Cooded by Tamana Farzami"
     />
     <title>Dream Travel</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <script defer src="src/script.js"></script>
   </head>
   <body>
+    <div class="scroll-progress"></div>
     <header>
       <nav class="nav">
         <ul class="nav_lists">
-          <li class="nav_item"><a class="nav_link" href="#">Part1</a></li>
-          <li class="nav_item"><a class="nav_link" href="#">Part2</a></li>
-          <li class="nav_item"><a class="nav_link" href="#">Part3</a></li>
-          <li class="nav_item"><a class="nav_link" href="#">Part4</a></li>
-          <li class="nav_item"><a class="nav_link" href="#">Part5</a></li>
-          <li class="nav_item"><a class="nav_link" href="#">Part6</a></li>
+          <li class="nav_item"><a class="nav_link" href="#">Home</a></li>
+          <li class="nav_item">
+            <a class="nav_link" href="#Explore">Explore</a>
+          </li>
+          <li class="nav_item"><a class="nav_link" href="#Rooms">Rooms</a></li>
+          <li class="nav_item">
+            <a class="nav_link" href="#Packages">Packages</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#Location">Location</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#Stories">Stories</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#Contact">Contact</a>
+          </li>
           <button class="btn nav_open">|||</button>
           <button class="btn nav_close">❌</button>
         </ul>
@@ -31,21 +43,25 @@
       </div>
     </header>
 
-    <section class="section-explore">
+    <section id="Explore" class="section-explore">
       <div class="container-first">
         <div class="explore-first">
-          <h2 class="exp-head">Explore Dream Travel Lodge</h2>
-          <p class="exp-para">
-            Nestled in the woods bordering Yosemite National Park, the Dream
-            lodge is a newly expanded historic resort combining a timeless full
-            with modern comforts such as full-service dinning and professional
-            recreation and wellness programs.
-          </p>
+          <img src="src/img/logo-1.png" class="logo" alt="logo Image" />
+          <div>
+            <h2 class="exp-head">Explore Dream Travel Lodge</h2>
+            <p class="exp-para">
+              Nestled in the woods bordering Yosemite National Park, the Dream
+              lodge is a newly expanded historic resort combining a timeless
+              full with modern comforts such as full-service dinning and
+              professional recreation and wellness programs.
+            </p>
+          </div>
+          <img src="src/img/logo-2.png" class="logo" alt="logo Image" />
         </div>
         <div class="explore-sec">
           <img src="src/img/all green.jpeg" alt="the main overview" />
-          <div class="exp-sec-container">
-            <h3><em>Welcome</em><br />to Dream Lodge</h3>
+          <div class="exp-sec_text">
+            <h3>Welcome<br />to Dream Lodge</h3>
             <p>
               From its humbled start in the early 2008<spna
                 style="font-size: xx-small"
@@ -62,63 +78,56 @@
               sort if surprise diversions for play or relaxation
               hammocks,horseshoes,bocce and zip lines, to name a few.
             </p>
+            <button class="exp-btn">View Cabins</button>
           </div>
-          <button class="btn exp-btn">View Cabins</button>
         </div>
       </div>
       <div class="container-two">
         <div class="one">
-          <img src="src/img/room4.jpeg" alt="cabin image" />
           <h4>Unique cabin-style accommodatios</h4>
           <p>Discover our Exceptional Accomadation</p>
-          <button class="row-btn">=></button>
+          <a href="#Contact" class="row-btn">=></a>
         </div>
         <div class="two">
-          <img src="src/img/Yosumit tour name.jpeg" alt="Yosumit tour image" />
           <h4>Extensive Yosemite tour options</h4>
           <p>Yosemite Tours, Guided Trips & More</p>
-          <button class="row-btn">=></button>
+          <a href="#Contact" class="row-btn">=></a>
         </div>
         <div class="three">
-          <img src="src/img/calmness.jpeg" alt="cabin image" />
           <h4>Spa and Wellness Service</h4>
           <p>Energy Balancing Experience</p>
-          <button class="row-btn">=></button>
+          <a href="#Contact" class="row-btn">=></a>
         </div>
         <div class="four">
-          <img src="src/img/food.jpeg" alt="food image" />
           <h4>On-site food and beverage</h4>
           <p>Enjoy great Food, Wine and Beverages</p>
-          <button class="row-btn">=></button>
+          <a href="#Contact" class="row-btn">=></a>
         </div>
         <div class="five">
-          <img
-            src="src/img/maldives-ile-beach-sun-38238.jpeg"
-            alt="special offer image"
-          />
           <h4>Package Special Offers</h4>
           <p>Its time to get outside and play</p>
-          <button class="row-btn">=></button>
+          <a href="#Contact" class="row-btn">=></a>
         </div>
         <div class="sixth">
-          <img src="src/img/header img 2.jpeg" alt="cabin image" />
           <h4>Holiday Promotion</h4>
           <p>A social mission to help the community</p>
-          <button class="row-btn">=></button>
+          <a href="#Contact" class="row-btn">=></a>
         </div>
       </div>
     </section>
-    <section class="section-room">
+    <section id="Rooms" class="section-room">
       <div class="sec-room-header">
         <h2>Cabins, Houses & Custom Camping</h2>
       </div>
       <div class="slider">
         <div class="slide">
-          <img src="src/img/room2.webp" alt="Photo 1" />
+          <dic class="image-cont">
+            <img src="src/img/room2.webp" alt="Photo 1" />
+          </dic>
           <div class="slide-text">
             <h4>Deluxe Cabins</h4>
             <p class="red-text">Ideal for couples</p>
-            <p>
+            <p class="describtion">
               Our spacious Deluxe Cabins(built in 2009 & 2012)feature a king
               bed, a large sitting area with queen sofa bed and a private deck
               facing into nature. Each of these cabins also includes charmind
@@ -131,16 +140,20 @@
             <li><span>👩‍👩‍👧‍👧</span> Sleep 4</li>
           </ul>
           <div class="feat-btn-container">
-            <button class="btn availabile-btn">Check availability</button>
-            <button class="btn detail-btn">View Details</button>
+            <button class="availabile-btn">Check availability</button>
+            <button class="detail-btn">View Details</button>
           </div>
         </div>
+
         <div class="slide">
-          <img src="src/img/room3.jpeg" alt="Photo 2" />
+          <div class="image-cont">
+            <img src="src/img/room3.jpeg" alt="Photo 2" />
+          </div>
+
           <div class="slide-text">
             <h4>John Muir House</h4>
             <p class="red-text">Ideal for couples</p>
-            <p>
+            <p class="describtion">
               The magnificent John Muir House(built in 2009) is a beautiful
               2,500 square foot rental home with three bedrooms and a large
               loft. The house is located on the Dream Lodge property and is
@@ -153,16 +166,18 @@
             <li><span>👨‍👨‍👦‍👦</span> Sleep 6</li>
           </ul>
           <div class="feat-btn-container">
-            <button class="btn availabile-btn">Check availability</button>
-            <button class="btn detail-btn">View Details</button>
+            <button class="availabile-btn">Check availability</button>
+            <button class="detail-btn">View Details</button>
           </div>
         </div>
         <div class="slide">
-          <img src="src/img/room4.jpeg" alt="Photo 3" />
+          <div class="image-cont">
+            <img src="src/img/room.jpeg" alt="Photo 3" />
+          </div>
           <div class="slide-text">
             <h4>Deluxe Cabins</h4>
             <p class="red-text">Ideal for couples</p>
-            <p>
+            <p class="describtion">
               Our spacious Deluxe Cabins(built in 2009 & 2012)feature a king
               bed, a large sitting area with queen sofa bed and a private deck
               facing into nature. Each of these cabins also includes charmind
@@ -175,53 +190,62 @@
             <li><span>👩‍👩‍👧‍👧</span> Sleep 4</li>
           </ul>
           <div class="feat-btn-container">
-            <button class="btn availabile-btn">Check availability</button>
-            <button class="btn detail-btn">View Details</button>
+            <button class="availabile-btn">Check availability</button>
+            <button class="detail-btn">View Details</button>
           </div>
         </div>
         <button class="slider__btn slider__btn--left"><</button>
         <button class="slider__btn slider__btn--right">></button>
       </div>
     </section>
-    <section class="packages">
+    <section id="Packages" class="packages">
       <div class="pack-con-first">
         <h2 class="pack-con-head">Package & Deals</h2>
       </div>
       <div class="pack-container-sec">
-        <div class="pack-first">
-          <!-- <img src="src/img/hicking package.jpeg" alt="Hicking"> -->
-          <p class="pack-con-sec-icon">🗻</p>
-          <p class="pack-con-sec-text">Hiking</p>
-          <div class="pack-sec-btn-con">
-            <p>from 250$</p>
-            <button class="pack-sec-btn">&rarr;</button>
+        <div class="pack">
+          <img src="src/img/hicking package.jpeg" alt="Hicking" />
+          <div class="pack-text">
+            <p class="pack-con-sec-icon">🗻</p>
+            <p class="pack-con-sec-text">Hiking</p>
+            <div class="pack-sec-btn-con">
+              <p>from 250$</p>
+              <button class="pack-sec-btn">&rarr;</button>
+            </div>
           </div>
         </div>
-        <div class="pack-sec">
-          <!-- <img src="src/img/hicking package.jpeg" alt="Hicking"> -->
-          <p class="pack-con-sec-icon">🍀</p>
-          <p class="pack-con-sec-text">Wellness</p>
-          <div class="pack-sec-btn-con">
-            <p>from 200$</p>
-            <button class="pack-sec-btn">&rarr;</button>
+        <div class="pack">
+          <img src="src/img/calmness2.webp" alt="Hicking" />
+          <div class="pack-text">
+            <p class="pack-con-sec-icon">🍀</p>
+            <p class="pack-con-sec-text">Wellness</p>
+            <div class="pack-sec-btn-con">
+              <p>from 200$</p>
+              <button class="pack-sec-btn">&rarr;</button>
+            </div>
           </div>
         </div>
-        <div class="pack-third">
-          <!-- <img src="src/img/hicking package.jpeg" alt="Hicking"> -->
-          <p class="pack-con-sec-icon">🥽</p>
-          <p class="pack-con-sec-text">Swimming ool Area</p>
-          <div class="pack-sec-btn-con">
-            <p>from 200$</p>
-            <button class="pack-sec-btn">&rarr;</button>
+        <div class="pack">
+          <img src="src/img/swimming pool.jpeg" alt="Hicking" />
+          <div class="pack-text">
+            <p class="pack-con-sec-icon">🥽</p>
+            <p class="pack-con-sec-text">Swimming Pool Area</p>
+            <div class="pack-sec-btn-con">
+              <p>from 200$</p>
+              <button class="pack-sec-btn">&rarr;</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="yosemite">
-      <h2 class="yosemite-head">Experience Yosemite</h2>
-      <button class="yosemite-btn">Plan Your Adventure</button>
+    <section id="Location" class="yosemite">
+      <div class="sub_part">
+        <h2 class="yosemite-head">Experience Yosemite</h2>
+        <a href="#Contact" class="yosemite-btn">Plan Your Adventure</a>
+      </div>
+      <div id="map"></div>
     </section>
-    <section class="stories">
+    <section id="Stories" class="stories">
       <div class="stories-head">
         <h3>Stories From Our Recent Guests</h3>
         <p>
@@ -233,60 +257,89 @@
         </p>
       </div>
       <div class="memories-cont">
-        <div class="first">
-          <p>"I've never seen a site more breath taking than Tunnel View"</p>
-          <p><strong>Maik G.</strong></p>
+        <div class="memory">
+          <img src="src/img/pexels-photo-2178175.jpeg" alt="view image" />
+          <p class="first_para">
+            "I've never seen a site more breath taking than Tunnel View"
+          </p>
+          <p class="sec_para"><strong>Maik G.</strong></p>
         </div>
-        <div class="sec">
-          <p>
+        <div class="memory">
+          <img src="src/img/family package.webp" alt="family Package" />
+          <p class="first_para">
             "The staff was phenomenal!!! They treated is like family and were
             very pleasant"
           </p>
-          <p><strong>Stephanie P.</strong></p>
+          <p class="sec_para"><strong>Stephanie P.</strong></p>
         </div>
-        <div class="third">
-          <p>
+        <div class="memory">
+          <img src="src/img/under river 2.jpeg" alt="" />
+          <p class="first_para">
             "The river experience was an excellent surprise. Felt like a secret
             oasis"
           </p>
-          <p><strong>Sabrina B.</strong></p>
+          <p class="sec_para"><strong>Sabrina B.</strong></p>
         </div>
       </div>
-      <button class="gallery-btn">Visit The Gallery To See More</button>
+      <div class="gallery-btn-cont">
+        <button class="gallery-btn">Visit The Gallery To See More</button>
+      </div>
     </section>
-    <section class="form">
+    <section id="Contact" class="form">
       <h2 class="form-head">Keep In Touch</h2>
       <p class="form-text">
         For the latest specials, news and updates from Dream Lodge Hotel
         subscribe bellow!
       </p>
       <div class="form-cont">
-        <span>✉ </span>
+        <p>✉</p>
         <form>
-          <input type="email" name="" />
+          <input type="email" name="email" />
           <button type="submit">Subscribe</button>
         </form>
       </div>
     </section>
     <footer>
+      <div class="footer-part_one">
+        <div class="part_A">
+          <p class="location_road">3316 Evergreen Road</p>
+          <p class="location_street">Groveland, CAlifornia 95321</p>
+        </div>
+
+        <div class="contact">
+          <p class="footer__copyright">
+            Cooded by
+            <a
+              class="contact__link"
+              target="_blank"
+              href=" https://github.com/Tamana543"
+              title="contact me 👩‍💻 "
+              >Tamana Farzami</a
+            >
+          </p>
+          <a
+            href="Mailto: tamanafarzami33@gmail.com"
+            class="contact__link email"
+            >Email</a
+          >
+        </div>
+      </div>
       <ul class="footer-lists">
-        <li class="list_item"><a class="list_link" href="#">Part1</a></li>
-        <li class="list_item"><a class="list_link" href="#">Part2</a></li>
-        <li class="list_item"><a class="list_link" href="#">Part3</a></li>
-        <li class="list_item"><a class="list_link" href="#">Part4</a></li>
-        <li class="list_item"><a class="list_link" href="#">Part5</a></li>
-        <li class="list_item"><a class="list_link" href="#">Part6</a></li>
+        <li class="list_item"><a class="list_link" href="#">Home</a></li>
+        <li class="list_item">
+          <a class="list_link" href="#Explore">Explore</a>
+        </li>
+        <li class="list_item"><a class="list_link" href="#Rooms">Rooms</a></li>
+        <li class="list_item">
+          <a class="list_link" href="#Packages">Packages</a>
+        </li>
+        <li class="list_item">
+          <a class="list_link" href="#Location">Location</a>
+        </li>
+        <li class="list_item">
+          <a class="list_link" href="#Stories">Stories</a>
+        </li>
       </ul>
-      <p class="footer__copyright">
-        Cooded by
-        <a
-          class="footer__link"
-          target="_blank"
-          href=" https://github.com/Tamana543"
-          title="contact me 👩‍💻 "
-          >Tamana Farzami</a
-        >
-      </p>
     </footer>
   </body>
 </html>

@@ -25,8 +25,7 @@ body {
   color: var(--text-sec-color);
 }
 button:hover {
-  background-color: var(--main-hover-color);
-  color: var(--text-sec-color);
+  color: var(--text-third-color);
   cursor: pointer;
 }
 /* rgb(190 182 182 / 27%), rgb(100 56 56 / 40%)) */
@@ -52,11 +51,12 @@ button:hover {
 .hamburger {
   position: fixed;
   right: 20px;
+  z-index: 2;
 }
 .hamburger .line {
-  width: 50px;
+  width: 20px;
   height: 3px;
-  background-color: var(--text-sec-color);
+  background-color: #342d2d;
   margin: 8px auto;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -91,7 +91,7 @@ button:hover {
   -webkit-transform: translateY(13px);
   -ms-transform: translateY(13px);
   -o-transform: translateY(13px);
-  transform: translateY(13px);
+  transform: translateY(9px);
 }
 #hamburger.is-active .line:nth-child(3) {
   -webkit-transform: translateY(-13px) rotate(90deg);
@@ -175,6 +175,7 @@ h1 {
 .explore-first {
   display: flex;
   justify-content: space-between;
+
   padding: 1.5rem 8.5rem;
   margin-bottom: 2rem;
 }
@@ -185,17 +186,18 @@ h1 {
 .exp-head {
   font-weight: revert-layer;
   line-height: clamp(2rem, 3rem, 3.5rem);
-  font-size: clamp(1rem, 2rem, 2.5rem);
+  font-size: clamp(0.8rem, 2rem, 2.5rem);
   text-transform: uppercase;
 }
 .exp-para {
-  font-size: clamp(1rem, 1.03rem, 1.5rem);
+  font-size: clamp(1.05rem, 1.03rem, 1.5rem);
   padding-top: 1rem;
   font-weight: 600;
 }
 .explore-sec {
   display: flex;
   justify-content: space-between;
+
   margin: 3rem 0rem;
 }
 .explore-sec img {
@@ -209,11 +211,11 @@ h1 {
 }
 .exp-sec_text h3 {
   font-weight: revert-layer;
-  font-size: clamp(2rem, 3rem, 3.5rem);
+  font-size: clamp(1.3rem, 3rem, 3.5rem);
   margin-bottom: clamp(2rem, 3rem, 3.5rem);
 }
 .exp-sec_text p {
-  font-size: clamp(1rem, 1.1rem, 2.5rem);
+  font-size: clamp(1.1rem, 1.1rem, 2.5rem);
   margin-top: 7%;
   color: var(--text-third-color);
 }
@@ -291,20 +293,21 @@ h1 {
 .sec-room-header h2 {
   color: var(--text-main-color);
   font-weight: revert-layer;
-  font-size: clamp(1rem, 2.9rem, 3rem);
+  font-size: clamp(0.5rem, 2.9rem, 3rem);
   line-height: clamp(2rem, 3rem, 3.5rem);
   margin: 3% 0%;
 }
 /* Slider */
 .slider {
-  max-width: 100rem;
+  max-width: 50rem;
   height: 40rem;
-
   position: relative;
   display: flex;
+  justify-content: center;
   outline: 1px;
   color: var(--text-main-color);
   overflow: hidden;
+  margin-left: 20%;
 }
 
 .slide {
@@ -386,7 +389,6 @@ h1 {
   position: absolute;
   top: 50%;
   z-index: 10;
-
   border: none;
   background: rgba(255, 255, 255, 0.7);
   font-family: inherit;
@@ -394,7 +396,7 @@ h1 {
   border-radius: 50%;
   height: 5.5rem;
   width: 5.5rem;
-  font-size: 3.25rem;
+  font-size: 2.25rem;
   cursor: pointer;
 }
 
@@ -693,28 +695,51 @@ footer {
   .explore-sec {
     flex-direction: column;
   }
+  .explore-sec img {
+    width: 100%;
+  }
   .container-two {
     grid-template-columns: 1fr;
   }
   .pack-container-sec {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
     margin: 0 auto;
+  }
+  .pack img {
+    width: 28rem;
+    height: 30rem;
   }
   .pack {
     margin: 3% 1%;
+    width: 100%;
+    height: 100%;
+  }
+  .pack-sec-btn-con {
+    width: 100%;
+  }
+  .yosemite {
+    margin: 20px 0px;
+  }
+  .yosemite-head {
+    text-align: center;
   }
   .memories-cont {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
     margin: 4% auto;
   }
   .memory {
     margin: 5px;
+    width: 100%;
+    height: 100%;
+  }
+  .memory img {
+    width: 28rem;
+    height: 35rem;
   }
   .slide {
     margin: 0% 20%;
   }
+
   .hamburger .line {
     display: block;
   }
@@ -730,7 +755,7 @@ footer {
     display: flex;
     flex-direction: column;
     position: fixed;
-    right: 20px;
+    right: 1rem;
     top: 40px;
     /* background-color: var(--text-sec-hover); */
   }
@@ -751,6 +776,43 @@ footer {
     visibility: visible;
     opacity: 1;
   }
-  .nav a:hover {
+  .explore-first {
+    flex-direction: column;
+    gap: 3%;
+    padding: 1.5rem;
+  }
+  .explore-first .logo {
+    margin: 0 auto;
+  }
+  .exp-sec_text {
+    text-align: center;
+    width: 100%;
+    padding: 0rem 1rem;
+  }
+  .container-two div {
+    width: 37rem;
+    height: 28rem;
+    margin: 0px 1%;
+  }
+  .sec-room-header h2 {
+    text-align: center;
+  }
+  .slider__btn {
+    top: 55%;
+  }
+  .slider__btn--left {
+    left: 2%;
+  }
+  .form-cont {
+    margin-bottom: 3%;
+  }
+  .form-text {
+    text-align: center;
+  }
+  .footer-lists {
+    display: none;
+  }
+  .footer-part_one {
+    margin: 3% 0%;
   }
 }

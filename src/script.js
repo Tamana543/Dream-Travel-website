@@ -62,19 +62,27 @@ allSections.forEach(function (sec) {
   sec.classList.add("section--hidden");
 });
 // map API
-// const mapContainer = document.getElementById("Location");
-// const mapEl = document.getElementById("map");
-// function mapLoader() {
-//   const map = L.map("map").setView([51.505, -0.09], 13);
+const mapContainer = document.getElementById("Location");
+const mapEl = document.getElementById("map");
+const subPart = document.querySelector(".sub_part");
+function mapEn() {
+  subPart.style.display = "none";
+  const map = L.map("map").setView([37.83333, -119.499998], 10);
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution:
+      '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  }).addTo(map);
+  L.marker([37.83333, -119.499998]).addTo(map);
+}
+mapEn();
 
-//   return L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-//     attribution:
-//       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-//   }).addTo(map);
-
-//   //   L.marker([51.5, -0.09])
-//   //     .addTo(map)
-//   //     .bindPopup("A pretty CSS popup.<br> Easily customizable.")
-//   //     .openPopup();
+// function setTimer(time) {
+//   setTimeout(() => {
+//     subPart.style.display = "block";
+//   }, time * 1000);
 // }
-// mapContainer.insertAdjacentHTML("beforebegin", mapLoader);
+// async function initMap() {
+//   await new Promise.race([mapEn(), setTimer(15)]);
+// }
+// initMap();

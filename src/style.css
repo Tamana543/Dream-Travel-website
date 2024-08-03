@@ -280,6 +280,14 @@ h1 {
   background-image: var(--background-main-gradient),
     url(./img/header-img-2.jpeg);
 }
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+section {
+  transition: transform 1s, opacity 1s;
+}
 /* section-room */
 .section-room {
   display: flex;
@@ -322,9 +330,7 @@ h1 {
   /* THIS creates the animation! */
   transition: transform 1s;
 }
-.hide {
-  display: none;
-}
+
 .image-cont {
   width: 25rem;
   height: 20rem;
@@ -797,12 +803,16 @@ footer {
   .sec-room-header h2 {
     text-align: center;
   }
+  .slider {
+    margin-left: 2%;
+  }
   .slider__btn {
     top: 55%;
   }
   .slider__btn--left {
     left: 2%;
   }
+
   .form-cont {
     margin-bottom: 3%;
   }

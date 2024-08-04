@@ -38,6 +38,7 @@ button:hover {
   background-color: #000;
   animation: scroll-progress linear;
   animation-timeline: scroll();
+  z-index: 2;
 }
 @keyframes scroll-progress {
   from {
@@ -326,7 +327,7 @@ section {
   height: 20rem;
   display: flex;
   flex-direction: column;
-
+  text-wrap: wrap;
   /* THIS creates the animation! */
   transition: transform 1s;
 }
@@ -369,7 +370,7 @@ section {
   margin-right: 3%;
 }
 .feat-btn-container button {
-  margin-top: 8%;
+  margin-top: 5%;
 
   border-radius: 0%;
 
@@ -688,141 +689,4 @@ footer {
 }
 .list_link:hover {
   color: var(--color-light--1);
-}
-/* MEDIAS */
-@media (max-width: 50rem) {
-  html {
-    font-size: 10px;
-  }
-  header {
-    width: 100vw;
-    height: 89vh;
-  }
-  .explore-sec {
-    flex-direction: column;
-  }
-  .explore-sec img {
-    width: 100%;
-  }
-  .container-two {
-    grid-template-columns: 1fr;
-  }
-  .pack-container-sec {
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  .pack img {
-    width: 28rem;
-    height: 30rem;
-  }
-  .pack {
-    margin: 3% 1%;
-    width: 100%;
-    height: 100%;
-  }
-  .pack-sec-btn-con {
-    width: 100%;
-  }
-  .yosemite {
-    margin: 20px 0px;
-  }
-  .yosemite-head {
-    text-align: center;
-  }
-  .memories-cont {
-    flex-direction: column;
-    margin: 4% auto;
-  }
-  .memory {
-    margin: 5px;
-    width: 100%;
-    height: 100%;
-  }
-  .memory img {
-    width: 28rem;
-    height: 35rem;
-  }
-  .slide {
-    margin: 0% 20%;
-  }
-
-  .hamburger .line {
-    display: block;
-  }
-  .nav {
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-  }
-  .nav_lists {
-    color: black;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    right: 1rem;
-    top: 40px;
-    /* background-color: var(--text-sec-hover); */
-  }
-  .background {
-    background-color: var(--text-sec-hover);
-  }
-  .nav li {
-    display: block;
-    text-align: center;
-    width: max-content;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 500ms, opacity 500ms;
-  }
-  .nav.visible li {
-    visibility: visible;
-    opacity: 1;
-  }
-  .explore-first {
-    flex-direction: column;
-    gap: 3%;
-    padding: 1.5rem;
-  }
-  .explore-first .logo {
-    margin: 0 auto;
-  }
-  .exp-sec_text {
-    text-align: center;
-    width: 100%;
-    padding: 0rem 1rem;
-  }
-  .container-two div {
-    width: 37rem;
-    height: 28rem;
-    margin: 0px 1%;
-  }
-  .sec-room-header h2 {
-    text-align: center;
-  }
-  .slider {
-    margin-left: 2%;
-  }
-  .slider__btn {
-    top: 55%;
-  }
-  .slider__btn--left {
-    left: 2%;
-  }
-
-  .form-cont {
-    margin-bottom: 3%;
-  }
-  .form-text {
-    text-align: center;
-  }
-  .footer-lists {
-    display: none;
-  }
-  .footer-part_one {
-    margin: 3% 0%;
-  }
 }

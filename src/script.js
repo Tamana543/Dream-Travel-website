@@ -73,7 +73,10 @@ function mapEn() {
     attribution:
       '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   }).addTo(map);
-  L.marker([37.83333, -119.499998]).addTo(map);
+  L.marker([37.83333, -119.499998])
+    .addTo(map)
+    .bindPopup("Find us here .")
+    .openPopup();
 }
 mapEn();
 

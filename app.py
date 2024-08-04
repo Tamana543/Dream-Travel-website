@@ -6,6 +6,9 @@ app = Flask(__name__)
 # configure logging
 logging.basicConfig(filename='error.log',level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
 @app.route("/", methods=['GET', 'POST'])
+def add_post():
+    # Handle form submission logic
+    return redirect(url_for('index'))
 def root():
       if request.method == 'POST':
         subscribe = request.form.get("email")

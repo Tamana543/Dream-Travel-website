@@ -15,3 +15,7 @@
 2024-08-04 21:27:50,724 - INFO -  * Restarting with stat
 2024-08-04 21:27:51,120 - WARNING -  * Debugger is active!
 2024-08-04 21:27:51,125 - INFO -  * Debugger PIN: 103-885-859
+2024-08-04 21:56:24,436 - INFO -  * Detected change in 'C:\\Users\\Farzami PC\\Desktop\\Projects\\Dream Travel\\app.py', reloading
+2024-08-04 21:56:25,772 - INFO -  * Restarting with stat
+2024-08-04 21:56:31,887 - WARNING -  * Debugger is active!
+2024-08-04 21:56:31,934 - INFO -  * Debugger PIN: 103-885-859

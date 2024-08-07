@@ -51,6 +51,7 @@
   .explore-sec img {
     width: 100%;
   }
+  /*
   .container-two {
     grid-template-columns: 1fr;
   }
@@ -59,7 +60,9 @@
     width: 37rem;
     height: 28rem;
     margin: 0px 1%;
+
   } */
+
   .slider {
     margin-left: 8%;
   }

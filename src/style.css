@@ -265,7 +265,7 @@ h1 {
 }
 .two {
   background-image: var(--background-main-gradient),
-    url(./img/Yosumit-tour-name.jpeg);
+    url(./img/Yosumit-tour-name.jpg);
 }
 .three {
   background-image: var(--background-main-gradient), url(./img/calmness.jpeg);

@@ -24,10 +24,7 @@ body {
   flex-direction: column;
   color: var(--text-sec-color);
 }
-button:hover {
-  color: var(--text-third-color);
-  cursor: pointer;
-}
+
 /* rgb(190 182 182 / 27%), rgb(100 56 56 / 40%)) */
 .scroll-progress {
   position: fixed;
@@ -219,10 +216,11 @@ h1 {
   font-size: clamp(1.1rem, 1.1rem, 2.5rem);
   margin-top: 7%;
   color: var(--text-third-color);
+  margin-bottom: 5%;
 }
 .exp-btn {
   margin-top: 10%;
-  padding: 0.9rem 1.9rem;
+  padding: 0.6rem 1.6rem;
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 0%;
@@ -230,6 +228,7 @@ h1 {
   background-color: var(--main-color);
   color: var(--text-sec-color);
   letter-spacing: 0.03rem;
+  text-decoration: none;
 }
 .container-two {
   display: grid;
@@ -363,15 +362,14 @@ section {
 }
 .features li {
   width: 100%;
-  margin-top: 6%;
+  margin: 6% 0%;
 }
 .features span {
   filter: grayscale(2);
   margin-right: 3%;
 }
-.feat-btn-container button {
-  margin-top: 5%;
-
+.feat-btn-container a:link {
+  text-decoration: none;
   border-radius: 0%;
 
   letter-spacing: 0.03rem;
@@ -380,14 +378,16 @@ section {
   color: var(--text-sec-color);
   background-color: var(--main-color);
   margin-right: 2%;
+  margin-top: 9%;
+
   border: none;
   font-weight: 600;
-  padding: 0.8rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   text-transform: capitalize;
 }
 .detail-btn {
   background-color: var(--text-sec-color);
-  padding: 0.7rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border: 1px solid var(--main-color);
   color: var(--text-main-color);
 }
@@ -441,10 +441,18 @@ section {
   align-items: center;
   margin-bottom: 4%;
 }
+/* Hover effect */
+.card-background {
+}
+
 .pack img {
   width: 20rem;
   height: 28rem;
   filter: brightness(0.85);
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: filter 200ms linear, transform 200ms linear;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
 }
 .pack {
   width: 20rem;
@@ -452,8 +460,21 @@ section {
   margin: 0% 2%;
   position: relative;
   color: var(--text-sec-color);
+  transition: 0.8s ease-in-out;
+  border-radius: 20px;
+  background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
 }
-
+.pack:hover {
+  box-shadow: 2px 30px 30px rgba(0, 0, 0, 0.5);
+  transform: scale(1.06);
+  cursor: pointer;
+}
+/* .pack:hover .pack img {
+  transform: scale(1.05) translateZ(0);
+}
+.pack:not(:hover) .pack img {
+  filter: brightness(0.8) saturate(1) contrast(1.2) blur(10px);
+} */
 .pack-text {
   position: absolute;
   bottom: 10px;
@@ -599,6 +620,8 @@ section {
   font-weight: 600;
   padding: 0.8rem 1.5rem;
   text-transform: capitalize;
+  text-decoration: none;
+  cursor: pointer;
 }
 .gallery-btn-cont {
   display: flex;

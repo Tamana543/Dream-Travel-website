@@ -26,6 +26,7 @@ body {
 }
 
 /* rgb(190 182 182 / 27%), rgb(100 56 56 / 40%)) */
+
 .scroll-progress {
   position: fixed;
   height: 10px;
@@ -512,20 +513,25 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 10%;
+
   height: 33rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   /* display: none; */
 }
-.yosemite-head {
-  font-size: clamp(1rem, 3rem, 3.5rem);
+.sub_part div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100%;
+  gap: 20%;
 }
-.yosemite-btn {
+.sub_part .yosemite-head {
+  font-size: clamp(1rem, 3rem, 3.5rem);
+  margin-bottom: 3%;
+}
+.sub_part .yosemite-btn {
   padding: 1% 1.5%;
   font-size: 18px;
   color: var(--main-color);

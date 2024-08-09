@@ -78,14 +78,20 @@ function mapEn() {
     .bindPopup("Find us here .")
     .openPopup();
 }
-mapEn();
 
-// function setTimer(time) {
-//   setTimeout(() => {
-//     subPart.style.display = "block";
-//   }, time * 1000);
-// }
-// async function initMap() {
-//   await new Promise.race([mapEn(), setTimer(15)]);
-// }
-// initMap();
+function setTimer(time) {
+  return new Promise(function (_, reject) {
+    setTimeout(() => {
+      subPart.style.display = "block";
+      map.style.display = "none";
+    }, time * 1000);
+  });
+}
+async function initMap() {
+  try {
+    await Promise.race([mapEn(), setTimer(10)]);
+  } catch (err) {
+    console.log(err);
+  }
+}
+initMap();

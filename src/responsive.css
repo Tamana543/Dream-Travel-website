@@ -3,6 +3,7 @@
   html {
     font-size: 15px;
   }
+
   .hamburger .line {
     display: block;
   }
@@ -76,6 +77,9 @@
 @media (max-width: 50rem) {
   html {
     font-size: 10px;
+  }
+  h1 {
+    text-align: center;
   }
   header {
     width: 100vw;
@@ -163,10 +167,13 @@
     opacity: 0;
     transition: visibility 500ms, opacity 500ms;
   }
+  .nav.visible {
+    /* BUG */
+    /* z-index: 10000; */
+  }
   .nav.visible li {
     visibility: visible;
     opacity: 1;
-    z-index: 2;
   }
   .explore-first {
     flex-direction: column;

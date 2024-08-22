@@ -89,7 +89,7 @@ function setTimer(time) {
 }
 async function initMap() {
   try {
-    await Promise.race([mapEn(), setTimer(10)]);
+    await Promise.race([mapEn(), setTimer(30)]);
   } catch (err) {
     console.log(err);
   }
